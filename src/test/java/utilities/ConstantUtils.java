@@ -7,5 +7,5 @@ public class ConstantUtils {
     public static String BROWSER_NAME = "Chrome";
 
     // Browser type = Normal / Headless
-    public static String BROWSER_TYPE = "Headless";
+    public static String BROWSER_TYPE = "Normal";
 }

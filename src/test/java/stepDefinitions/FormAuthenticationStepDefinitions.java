@@ -1,9 +1,11 @@
 package stepDefinitions;
 
 import browserControl.WebConnector;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import pageObjects.FormAuthenticationPage;
 import utilities.ConstantUtils;
 
@@ -26,6 +28,10 @@ public class FormAuthenticationStepDefinitions extends WebConnector {
         page.clickLogin();    }
 
 
+    @And("the user can see {string} in the page")
+    public void theUserCanSeeInThePage(String expectedtext) {
+        Assert.assertTrue(driver.getPageSource().contains(expectedtext));
+    }
 
 
 }

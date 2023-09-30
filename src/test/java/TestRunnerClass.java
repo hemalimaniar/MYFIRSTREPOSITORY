@@ -4,8 +4,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = { "pretty", "html:target/cucumber.html"},
-        features = "C:\\LSA\\Projects\\AUGNEW23\\src\\test\\java\\features",
-        glue = {"browserControl","stepDefinitions"}, tags = "@SmokeTest"
+        features = "C:\\LSA\\Projects\\MYFIRSTREPOSITORY\\AUGNEW23\\src\\test\\java\\feature",
+        glue = {"browserControl","stepDefinitions"}, tags = "@hemali"
 
 
 )

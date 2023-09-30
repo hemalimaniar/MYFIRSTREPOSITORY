@@ -6,3 +6,4 @@ Feature: Swag Labs login
     Given user navigates to saucedemo Website
     When I enter correct username as "standard_user" & password as "secret_sauce"
     Then login should be successful
+  And the user can see "Products" in the page
